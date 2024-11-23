@@ -3,11 +3,18 @@
 	
   <head>
     <script type="text/javascript" src="./script.js">
-</script>
-	</head>
-<body>
-  <!-- Input fields -->
-  <label for="name">Name:</label>
+document.getelementbyId(button).eventListener("click",function()
+		{
+			const name=document.getElementbyId(name);
+			const year=document.getElementbyId(year);	
+			const url=document.getElementbyId(url)
+		const queryString = `?name=${name}&year=${year}`;
+      const url = `https://localhost:8080/${queryString}`;
+      url.innerText = url;
+    });})
+	</script>
+	  <label for="name">Name:
+	</label>
   <input type="text" id="name" name="name" />
 
   <label for="year">Year:</label>
